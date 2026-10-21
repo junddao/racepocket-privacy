@@ -1,0 +1,264 @@
+/* 달로그(Dalog) 정책 문서 - 반응형 스타일 */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple SD Gothic Neo",
+    "Noto Sans KR", Roboto, "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.75;
+  font-size: 16px;
+  color: #173239;
+  background-color: #f4f6f2;
+  padding: 20px;
+  word-break: keep-all;
+  overflow-wrap: break-word;
+}
+
+.container {
+  max-width: 760px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  border: 1px solid #dfe6e2;
+  border-radius: 16px;
+  padding: 40px 44px 32px;
+}
+
+/* Header */
+header {
+  margin-bottom: 40px;
+  padding-bottom: 24px;
+  border-bottom: 2px solid #dcebea;
+  position: relative;
+}
+
+h1 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #173239;
+  margin-bottom: 8px;
+  letter-spacing: -0.5px;
+}
+
+.brand {
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #22686b;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.last-updated {
+  font-size: 14px;
+  color: #718084;
+}
+
+.lang-switch {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 14px;
+}
+
+.lang-switch a {
+  color: #22686b;
+  text-decoration: none;
+  padding: 6px 12px;
+  border: 1px solid #22686b;
+  border-radius: 999px;
+  transition: all 0.2s ease;
+}
+
+.lang-switch a:hover {
+  background-color: #22686b;
+  color: #ffffff;
+}
+
+/* Content */
+main {
+  margin-bottom: 40px;
+}
+
+h2 {
+  font-size: 21px;
+  font-weight: 700;
+  color: #173239;
+  margin-top: 40px;
+  margin-bottom: 16px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #dfe6e2;
+  letter-spacing: -0.3px;
+}
+
+h3 {
+  font-size: 17px;
+  font-weight: 600;
+  color: #345057;
+  margin-top: 24px;
+  margin-bottom: 10px;
+}
+
+p {
+  margin-bottom: 16px;
+  color: #345057;
+}
+
+ul, ol {
+  margin-bottom: 16px;
+  margin-left: 22px;
+}
+
+li {
+  margin-bottom: 8px;
+  color: #345057;
+}
+
+a {
+  color: #22686b;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+a:hover {
+  color: #173f42;
+}
+
+strong {
+  font-weight: 600;
+  color: #173239;
+}
+
+/* Callout: 중요 고지 */
+.notice {
+  background-color: #edf4f2;
+  border-left: 4px solid #22686b;
+  border-radius: 0 10px 10px 0;
+  padding: 18px 20px;
+  margin: 24px 0;
+}
+
+.notice p:last-child {
+  margin-bottom: 0;
+}
+
+.notice.warn {
+  background-color: #fdf3f3;
+  border-left-color: #c94f52;
+}
+
+.notice.warn strong {
+  color: #a83b3e;
+}
+
+/* Tables */
+.table-wrap {
+  overflow-x: auto;
+  margin: 24px 0;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 15px;
+  min-width: 480px;
+}
+
+th {
+  background-color: #edf4f2;
+  padding: 12px;
+  text-align: left;
+  font-weight: 600;
+  color: #173239;
+  border-bottom: 2px solid #dcebea;
+  vertical-align: top;
+}
+
+td {
+  padding: 12px;
+  border-bottom: 1px solid #eef2ef;
+  vertical-align: top;
+}
+
+tr:last-child td {
+  border-bottom: none;
+}
+
+/* Page nav */
+.page-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.page-nav a {
+  font-size: 14px;
+  text-decoration: none;
+  color: #345057;
+  background-color: #f4f6f2;
+  border: 1px solid #dfe6e2;
+  border-radius: 999px;
+  padding: 6px 14px;
+  transition: all 0.2s ease;
+}
+
+.page-nav a:hover {
+  background-color: #dcebea;
+  border-color: #22686b;
+  color: #22686b;
+}
+
+.page-nav a[aria-current="page"] {
+  background-color: #22686b;
+  border-color: #22686b;
+  color: #ffffff;
+}
+
+/* Footer */
+footer {
+  margin-top: 40px;
+  padding-top: 24px;
+  border-top: 1px solid #dfe6e2;
+  font-size: 14px;
+  color: #718084;
+}
+
+footer p {
+  color: #718084;
+  margin-bottom: 8px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  body { padding: 12px; }
+  .container { padding: 28px 22px 24px; border-radius: 12px; }
+  h1 { font-size: 24px; }
+  h2 { font-size: 19px; }
+  h3 { font-size: 16px; }
+  .lang-switch { position: static; margin-top: 16px; }
+  table { font-size: 14px; }
+  th, td { padding: 9px; }
+}
+
+@media (max-width: 480px) {
+  body { font-size: 15px; }
+  .container { padding: 22px 16px 20px; }
+  h1 { font-size: 21px; }
+  h2 { font-size: 18px; }
+  ul, ol { margin-left: 18px; }
+}
+
+/* Print */
+@media print {
+  body { background-color: #fff; color: #000; font-size: 11pt; padding: 0; }
+  .container { border: none; padding: 0; max-width: none; }
+  .lang-switch, .page-nav { display: none; }
+  a { color: #000; }
+  h1, h2, h3 { page-break-after: avoid; }
+  table, ul, ol, .notice { page-break-inside: avoid; }
+}
